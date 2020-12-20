@@ -1,4 +1,4 @@
-# Ejercicio 2, Apartado 1.
+# Ejercicio 1, Capítulo 3.
 # Del libro Aprendiendo Python desde 0. Jon Vadillo. 2020
 # Autor. Gregorio Coronado Morón.
 # Fecha. 12-2020
