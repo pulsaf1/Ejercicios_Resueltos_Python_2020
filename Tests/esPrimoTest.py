@@ -1,5 +1,5 @@
 import unittest
-from Ejercicio8_1 import esPrimo
+from Ejercicio_Cap8_1 import esPrimo
 
 # Debemos crear una clase que hereda de la clase TestCase
 class esPrimoTest(unittest.TestCase):
