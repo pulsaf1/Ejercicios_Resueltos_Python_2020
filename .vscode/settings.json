@@ -9,6 +9,6 @@
     "python.testing.pytestEnabled": false,
     "python.testing.unittestEnabled": true,
     "terminal.integrated.env.linux": {
-        "PYTHONPATH": "."
+        "PYTHONPATH": "." 
     },
 }
