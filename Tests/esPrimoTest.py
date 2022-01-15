@@ -1,5 +1,5 @@
 import unittest
-from Ejercicio_Cap8_1 import esPrimo
+from src.Ejercicio_Cap8_1 import esPrimo
 
 # Debemos crear una clase que hereda de la clase TestCase
 class esPrimoTest(unittest.TestCase):
@@ -19,11 +19,14 @@ class esPrimoTest(unittest.TestCase):
         self.assertEqual(esPrimo(3), True)
     
     def test_negative(self):
-        self.assertFalse(esPrimo(-1))
+        with self.assertRaises(TypeError):
+            esPrimo(-1)
 
     def test_isNotInt(self):
-        self.assertFalse(esPrimo("Holaaa"))
-        self.assertFalse(esPrimo("4"))
+        with self.assertRaises(TypeError):
+            esPrimo("Holaaaa")
+            esPrimo(False)
+
 
 # Llamamos a main para que se ejecute el Runner.
 if __name__ == '__main__':

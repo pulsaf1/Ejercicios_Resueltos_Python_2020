@@ -7,6 +7,9 @@
 # Versión con un UNICO RETURN en la función.
 
 def esPrimo(x):
+    if x < 0:
+        raise TypeError("El numero no puede ser negativo") 
+
     divisores = 1 
     if isinstance(x,int): 
         if x >= 2:
@@ -16,9 +19,4 @@ def esPrimo(x):
                 if (x % num == 0): divisores+=1
                 num += 1
     return (divisores == 0)    
-
-print(esPrimo("Hola"))
-print(esPrimo(4))
-print(esPrimo(113))
-
 
